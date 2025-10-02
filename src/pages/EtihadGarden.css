@@ -1,0 +1,199 @@
+/* Full screen background wrapper */
+.phase1-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+ 
+/* Content with animation from bottom */
+.content {
+  color: white;
+  transform: translateY(100px); /* start below */
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+ 
+.content.animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+ 
+/* Headline */
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+ 
+/* Paragraph in two lines */
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.6;  /* spacing between lines */
+  max-width: 600px;  /* restrict width for two-line effect */
+  margin: 0 auto 30px auto;
+}
+ 
+/* Explore button style */
+.explore-btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+ 
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+ 
+/* Hover / click effect */
+.explore-btn:hover {
+  color: #000000; /* text color changes on hover */
+  background-color: white; /* background white on hover */
+  transform: translateY(-10px); /* move up */
+}
+ 
+ 
+ 
+ 
+ 
+/* div 2 */
+.etihad-garden-section {
+  background-color: #021446; /* blue background */
+  padding: 50px 20px;
+  text-align: center;
+  color: green; /* h1 green text */
+}
+ 
+.etihad-garden-section h1 {
+  color: limegreen; /* green text */
+  font-size: 2rem;
+  margin: 40px 0 20px 0;
+}
+ 
+/* Video container */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+ 
+/* Default smaller video sizes for 2nd and 3rd videos */
+.video-container.smaller iframe {
+   width: 1000px;  
+  height: 600px;
+  max-width: 100%;
+}
+ 
+/* First video bigger */
+.video-container.first-video iframe {
+  width: 1400px;  
+  height: 800px;
+  max-width: 100%;
+}
+ 
+/* div 3 */
+.etihad-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  padding: 40px;
+  padding-left: 300px;
+  width: 1000px;   /* fixed width */
+  height: 600px;  
+  color: white;
+  gap: 20px;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+ 
+/* Left side: text */
+.etihad-content {
+  flex: 0 0 45%; /* fixed 45% width */
+  text-align: left;
+}
+ 
+.etihad-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+ 
+.etihad-content p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+ 
+/* Right side: fixed-size image */
+.etihad-image-wrapper {
+  flex: 0 0 55%; /* fixed 55% width */
+  display: flex;
+  justify-content: center; /* image aligned right */
+}
+ 
+.etihad-card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+ 
+  display: flex;           /* make container flex */
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+ 
+.etihad-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+ 
+/* Hover effect */
+.etihad-card:hover img {
+  transform: scale(1.05);
+}
+ 
+/* Caption text */
+.image-caption {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #08cc12;
+ 
+  border-radius: 8px;
+}
+ 
+.main-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  height: 100vh;           /* full screen height */
+  background: #1e3a8a;     /* full blue background */
+}
+ 
+.custom-box {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  border-radius: 8px;
+  padding-left: 350px;
+}
+ 
+.custom-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+ 

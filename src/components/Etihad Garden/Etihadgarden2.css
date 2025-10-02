@@ -1,0 +1,255 @@
+.etihad-card123 {
+  position: relative;
+  width: 100%;        /* full width */
+  height: 5%;
+   
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 👈 yeh scroll par fixed karega */
+}
+
+.etihad-card123 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.etihad-card123 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Hover effect */
+.etihad-card123:hover img {
+  transform: scale(1.05);
+}
+
+.image-caption123 {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #08cc12;
+  border-radius: 8px;
+}
+
+.etihad-section123 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 3, 77);
+  padding: 40px;
+  padding-left: 200px;
+  width: 1491px;   /* fixed width */
+  height: 600px;  
+  color: white;
+  gap: 20px;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+.etihad-content123 {
+  flex: 0 0 45%; /* fixed 45% width */
+  text-align: left;
+}
+
+.etihad-content123 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.etihad-content123 p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.amenities-section123 {
+  background: #0a2342; /* blue background */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+
+  max-width: 1000px;   /* 👈 section ki width limit */
+  margin: 0 auto;      /* 👈 center me karne ke liye */
+  border-radius: 12px; /* optional - halka curve look */
+}
+
+.amenities-section123 h1 {
+  color: #7fff00; /* green heading */
+  margin-bottom: 15px;
+}
+
+.amenities-section123 p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #ddd;
+}
+
+.amenities-slider123 {
+  width: 100%;
+}
+
+.card123 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: 300px;    /* 👈 har card ki width limit */
+  margin: 0 auto;      /* 👈 card center */
+}
+
+.card123 img {
+ width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 👇 Overlay Style */
+.card-overlay123 {
+  position: absolute;
+  top: 100%;   /* 👈 initially hidden (niche) */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: top 0.4s ease-in-out; /* 👈 smooth transition */
+  text-align: center;
+}
+
+.card123:hover .card-overlay123 {
+  top: 0;  /* 👈 hover par upar se slide in */
+}
+
+.card-overlay123 h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #7fff00; /* green heading inside overlay */
+}
+
+.card-overlay123 p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.card-btn123 {
+  background: #4caf50; /* green */
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.card-btn123:hover {
+  background: #3a9a40;
+}
+
+/* Book Now Section Center */
+.booknow-section123 {
+  display: flex;
+  justify-content: center;  /* horizontally center */
+  align-items: center;      /* vertically center */
+  min-height: 100vh;        /* full screen height */
+  background: #0a2342;      /* dark blue background */
+  padding: 20px;
+}
+
+/* Card Styling */
+.booknow-card123 {
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+  width: 900px;
+  max-width: 90%;
+  text-align: center;
+  margin-left: 450px;
+}
+
+/* Heading */
+.booknow-card123 h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: green;
+}
+
+/* Form Layout */
+.booknow-card123 form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+/* Input, Select, Textarea */
+.booknow-card123 input,
+.booknow-card123 select,
+.booknow-card123 textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid green;
+  padding: 10px 5px;
+  font-size: 1rem;
+  color: green;
+  outline: none;
+  width: 100%;
+}
+
+.booknow-card123 input::placeholder,
+.booknow-card123 textarea::placeholder {
+  color: rgba(0, 128, 0, 0.6);
+}
+
+/* Labels */
+.booknow-card123 label {
+  font-size: 0.9rem;
+  color: green;
+  margin-top: 5px;
+}
+
+/* Button */
+.booknow-card123 button {
+  background: green;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 20%;
+}
+
+.booknow-card123 button:hover {
+  background: darkgreen;
+}
+.video-container3 {
+  /* display: flex; */
+  /* justify-content: center; horizontally center
+  align-items: center;     vertically center */
+  width: 800px;            /* set width */
+  height: 450px;           /* set height */
+  padding: 50px;           /* optional */
+
+}
+.video-container3 video,
+.video-container3 iframe {
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  left: 25%;
+  top: 70%;
+}

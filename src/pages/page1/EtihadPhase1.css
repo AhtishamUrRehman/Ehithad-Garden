@@ -1,0 +1,394 @@
+
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+}
+ 
+.fullImage {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+ .breadcrumb-bar {
+  background-color: #0c4ea2; /* Blue background */
+  padding: 12px 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.breadcrumb-link {
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+  color: #ffdd57; /* Yellowish on hover */
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: white;
+}
+
+.breadcrumb-current {
+  color: #8cc63f; /* Green text */
+  font-weight: 500;
+}
+
+/* Section layout */
+.aboutSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0c233b;   /* white background */
+  padding: 80px 100px;
+  min-height: 80vh;
+}
+ 
+/* Left side text */
+.textContent {
+  flex: 1;
+  margin-right: 60px;
+  color: #555;           /* gray text */
+}
+ 
+.textContent h1 {
+  font-size: 28px;
+  line-height: 1.8;
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;        /* heading blue */
+  text-transform: capitalize;
+}
+ 
+/* Right side image */
+.imageContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+ 
+.sideImage {
+  max-width: 90%;
+  height: auto;
+}
+/* 🔹 Generic section wrapper */
+.sectionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 100px;
+  min-height: 70vh;
+  gap: 50px;
+  background: #ffffff;   /* light gray bg */
+}
+.sectionWrapper1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 100px;
+  min-height: 70vh;
+  gap: 50px;
+  background: #00cf2d;   /* light gray bg */
+}
+ 
+.sectionWrapper.reverse {
+  flex-direction: row-reverse;  /* alternate layout for variety */
+  background: #ffffff;
+}
+ 
+/* 🔹 Text side */
+.textContent {
+  flex: 1;
+  color: #333;
+}
+
+.textContent h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ffffff;   /* brand blue */
+}
+.textContent h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #000000;   /* brand blue */
+}
+ 
+.textContent p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+ 
+/* 🔹 Image side */
+.imageContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ 
+.sideImage {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  transform: rotate(0deg);
+}
+ 
+.sideImage:hover {
+  transform: scale(1.05) rotate(0deg);  /* thoda zoom + seedha */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* shadow effect */
+}
+ 
+.sliderControls11 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  margin-top: 20px;
+  position: absolute;
+  top: 265%;
+  left: 45%;
+}
+ 
+.arrow {
+  background-color: #22c55e; /* green-500 */
+  color: white;
+  font-size: 2rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+ 
+.arrow:hover {
+  background-color: #16a34a; /* green-600 */
+  transform: scale(1.1);
+}
+/* Smooth fade + slide animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ 
+.animate-fadeSlide {
+  animation: fadeSlide 0.7s ease-in-out;
+}
+.video-container {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center;     /* vertically center */
+  padding: 50px 200px;     /* top-bottom 50px, left-right 200px */
+}
+ 
+.video-container iframe {
+  width: 2000px;   /* 👈 apne hisaab se badha sakte ho */
+  height: 700px;
+  border-radius: 12px; /* halka rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* thoda shadow */
+}
+ 
+ 
+ 
+/* Container */
+.amenities-container {
+  width: 100%;
+  margin: auto;
+  text-align: start;
+  padding: 10px 40px;
+  background-color: #ffffff;
+}
+ 
+/* Headings */
+.heading {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(2, 16, 82); /* Main heading green */
+  margin-bottom: 10px;
+}
+ 
+.sub-text {
+  font-size: 25px;
+  color: gray;
+  margin: 0;
+  margin-bottom: 5px;
+}
+ 
+/* Swiper */
+.amenities-swiper {
+  margin-top: 30px;
+}
+ 
+/* Card */
+.card {
+  text-align: start;
+}
+ 
+.card-title {
+  font-size: 40px;
+  font-weight: bold;
+   color: rgb(2, 16, 82);
+  margin-bottom: 10px;
+  
+}
+ 
+/* Images full size */
+.card-img {
+  width: 80%;
+  height: 300px; /* equal size */
+  object-fit: cover; /* crop to fill */
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+ 
+.card-img:hover {
+  transform: scale(1.05); /*  zoom effect */
+}
+/* ✅ Dropdown Items */
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: #0c2340;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dropdown-menu li a.active {
+  background: #7ac943;
+  color: #fff;
+}
+
+.dropdown-menu li a:hover {
+  background: #7ac943;
+  color: #fff;
+}
+
+/* ✅ Responsive Fix */
+@media screen and (max-width: 992px) {
+  .phase1-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .phase1-text, .phase1-right {
+    width: 100%;
+  }
+
+  .phase1-logo {
+    width: 250px;
+  }
+
+  .phase1-title {
+    font-size: 2.5rem;
+  }
+
+  .phase1-slide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .phase1-slide-text,
+  .phase1-slide-img-container {
+    max-width: 100%;
+  }
+}
+/* 🔹 BOOK NOW Form Section */
+.book-now-form {
+  background: #f8f8f8;
+  padding: 40px 20px;
+  margin: 50px auto;
+  max-width: 700px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  
+}
+
+.book-now-form .form-heading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #0c1c39; /* Dark navy like screenshot */
+  margin-bottom: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 95%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+  border-color: #4CAF50; /* Green focus border */
+}
+
+.form-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #8cc63f; /* Green like screenshot */
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 15%;
+}
+
+.submit-btn:hover {
+  background-color: #6aa22d; /* Darker green on hover */
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+  .book-now-form {
+    padding: 25px 15px;
+  }
+
+  .book-now-form .form-heading {
+    font-size: 26px;
+  }
+}

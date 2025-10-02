@@ -1,0 +1,263 @@
+/* Reset */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0b2441;  /* Page ka asal background white hi rehne do */
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* Footer ko push karta hai niche */
+}
+
+/* Footer Main */
+.footer {
+  background: #0b2441; /* Dark blue background */
+  color: #dcdcdc;
+  height: 90vh; 
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Section */
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 40px 60px;
+  margin-top: 100px;
+}
+
+.footer-section h3 {
+  color: #8cc63f;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.footer-section p strong{
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 10px;
+   color: #8cc63f;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-section-icons {
+  font-size: 24px;
+  line-height: 2;
+  margin-top: 40px;
+  margin-left: 180px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.social-icons a {
+  font-size: 24px;
+  margin: 0 8px;
+  transition: 0.3s ease;
+  color: #fff;  /* default white */
+}
+
+/* Facebook */
+.social-icons a.facebook:hover {
+  color: #1877F2;
+}
+
+/* Instagram */
+.social-icons a.instagram:hover {
+  color: #E4405F;
+}
+
+/* YouTube */
+.social-icons a.youtube:hover {
+  color: #FF0000;
+}
+
+/* LinkedIn */
+.social-icons a.linkedin:hover {
+  color: #0A66C2;
+}
+
+/* TikTok */
+.social-icons a.tiktok:hover {
+  color: #000000;
+}
+
+
+.social-icons a:hover {
+  color: #8cc63f;
+}
+
+/* Bottom Green Line */
+.footer-bottom {
+  background: #8cc63f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0b2441;
+  margin-top: auto;
+  height: 50%;   /* ensures always sticks to bottom */
+}
+
+/* ---------------- Responsive ---------------- */
+
+/* Mobile Screens (up to 600px) */
+@media (max-width: 600px) {
+  .footer {
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 250px;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+.footer-section h3,
+.footer-section-icons h3 {
+  color: green;   /* Heading color */
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.footer-section strong,
+.footer-section-icons strong {
+  color: green;   /* Strong text color */
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section-icons p {
+  color: #555;   /* Normal text grey */
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+/* Tablets (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .footer {
+    height: auto;
+    padding: 30px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 60px;
+    padding: 30px;
+  }
+
+  .footer-logo {
+    width: 400px;
+    height: auto;
+  }
+
+  .footer-section h3 {
+    font-size: 100px;
+  }
+
+  .footer-section p {
+    font-size: 15px;
+  }
+
+  .footer-section-icons {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+}
+
+/* Surface Pro 7 - Landscape (1200px to 1368px) */
+@media (min-width: 1200px) and (max-width: 1368px) and (orientation: landscape) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr; /* 2 columns for balance */
+    gap: 30px;
+    margin-top: 70px;
+    padding: 30px 50px;
+  }
+
+  .footer-logo {
+    width: 450px;
+    height: auto;
+  }
+
+  .footer-section h3 {
+    font-size: 20px;
+  }
+
+  .footer-section p {
+    font-size: 15px;
+  }
+
+  .footer-bottom {
+    padding: 12px 40px;
+    font-size: 13px;
+  }
+}
+
+/* Surface Pro 7 - Portrait (900px - 1024px) */
+@media (min-width: 900px) and (max-width: 1024px) and (orientation: portrait) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+  }
+
+  .footer-logo {
+    width: 350px;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    font-size: 13px;
+  }
+}
